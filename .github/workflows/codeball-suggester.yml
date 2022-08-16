@@ -1,0 +1,24 @@
+on:
+  pull_request_review_comment:
+    types: [created, edited]
+name: Codeball
+jobs:
+  codeball_job:
+    runs-on: ubuntu-latest
+    name: Codeball
+    steps:
+    - name: Trigger Codeball
+      id: codeball_baller
+      uses: sturdy-dev/codeball-action/baller@beta
+
+    - name: Get Status
+      id: codeball_status
+      uses: sturdy-dev/codeball-action/status@beta
+      with:
+        codeball-job-id: ${{ steps.codeball_baller.outputs.codeball-job-id }}
+
+    - name: Post Suggestions
+      uses: sturdy-dev/codeball-action/suggester@beta
+      if: ${{ steps.codeball_status.outputs.suggested == 'true' }}
+      with:
+        codeball-job-id: ${{ steps.codeball_baller.outputs.codeball-job-id }}
