@@ -11,6 +11,25 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
+        var cmd = parseCommandLine(args);
+        var jarPath = cmd.getOptionValue("j");
+        var targetClass = cmd.getOptionValue("c").replaceAll("\\.", "/");
+        var targetMethod = cmd.getOptionValue("m").replaceAll("\\.", "/");
+        var methodName = targetMethod.split("[()]")[0].replaceAll("\\\\", "");
+        var paramTypes = Arrays.asList(targetMethod.split("[()]")[1].split("\\s+"));
+        var returnType = cmd.getOptionValue("r").replaceAll("\\.", "/");
+        String prefix;
+        if (cmd.hasOption("f")) {
+            prefix = cmd.getOptionValue("f").replaceAll("\\.", "/");
+        } else {
+            prefix = "";
+        }
+        var desc = TypeDescriptors.parseFrom(paramTypes, returnType);
+        var d = new Rdeps(jarPath, prefix);
+        d.work(targetClass, methodName, desc, cmd);
+    }
+
+    private static org.apache.commons.cli.CommandLine parseCommandLine(String[] args) {
         var options = new Options();
         options.addOption(
                 Option.builder("j")
