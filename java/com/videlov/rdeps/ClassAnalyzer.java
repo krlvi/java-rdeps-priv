@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ClassAnalyzer extends ClassVisitor {
     private final String targetClass;
-    private final Method targetMethod;
+    private final Method TARGET_METHOD;
     private final List<Caller> callers;
 
     private String source;
