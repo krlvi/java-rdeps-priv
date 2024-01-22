@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ClassAnalyzer extends ClassVisitor {
     private final String targetClass;
-    private final Method TARGET_METHOD;
+    private final Method TARGET_METHOD;//lock
     private final List<Caller> callers;
 
     private String source;
@@ -34,7 +34,7 @@ public class ClassAnalyzer extends ClassVisitor {
         className = name;
     }
 
-    @Override
+    @Override// This should not lock
     public void visitSource(String source, String debug) {
         this.source = source;
     }
