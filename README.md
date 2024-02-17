@@ -7,6 +7,7 @@ The functionality of `java-rdeps` is similar to the "Method Hierarchy" tool avai
 This tool is used for visualizing or measuring the usage of methods within a codebase, aiding refactoring efforts.
 
 ## Usage
+
 This project is built with [Bazel](https://bazel.build). To build this tool, perform `bazel build rdeps`. To run the application through Bazel, perform `bazel run rdeps --` followed by the appropriate arguments as outlined below:
 ```
 To generate the reverse dependencies a method provide the path to
@@ -25,7 +26,9 @@ the jar archive to analyze as well as the target class and method.
  -r,--return <arg>       return type of the target method in the format
                          com.example.ReturnType or void
 ```
+
 ## Example
+
 Below is an example usage of the `rdeps` tool, searching for the transitive usage of Guava's `com.google.common.hash.Hasher.putByte(byte)` within the library itself.
 ```
 $ java -jar rdeps.jar \
@@ -61,10 +64,12 @@ $ java -jar rdeps.jar \
     --graph \
  | dot -Tpng > putByte.png
 ```
+
 The command produces the following visualization:
 ![putByte graph](./examples/putByte.png?raw=true)
 
 ## Performance
+
 As per the current implementation, calculating the full transitive closure of a method within a .jar archive has asymptotic complexity of `O(nm)` where `n` is the total number of methods in the jar and `m` is the number of transitive usages of the target method.
 
 This means that if you are analyzing a particularly large .jar, or the target method has an extreme number of indirect usages, `rdeps` may take minutes to complete.
