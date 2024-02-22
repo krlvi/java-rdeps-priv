@@ -2,7 +2,7 @@
 
 Given a Java method, `java-rdeps` evaluates its transitive closure of reverse dependencies. It prints the resulting call graph to standard out in DOT format.
 
-The functionality of `java-rdeps` is similar to the "Method Hierarchy" tool available in the IntelliJ IDE, with the major difference being that `java-rdeps` eagerly computes the entire call tree.
+Tsdfjlkjhe functionality of `java-rdeps` is similar to the "Method Hierarchy" tool available in the IntelliJ IDE, with the major difference being that `java-rdeps` eagerly computes the entire call tree.
 
 This tool is used for visualizing or measuring the usage of methods within a codebase, aiding refactoring efforts.
 
