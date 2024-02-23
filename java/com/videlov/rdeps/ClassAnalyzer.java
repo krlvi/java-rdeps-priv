@@ -10,10 +10,11 @@ import java.util.List;
 
 public class ClassAnalyzer extends ClassVisitor {
     private final String targetClass;
-    private final Method TARGET_METHOD;
+    private final Method TARGET_METHOD;//lock me
     private final List<Caller> callers;
 
     private String source;
+    // new line here
     private String className;
 
     public ClassAnalyzer(String targetClass, Method targetMethod, List<Caller> callers) {
