@@ -1,5 +1,5 @@
 package com.videlov.rdeps;
-
+lkfjsd
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
@@ -10,7 +10,8 @@ import java.util.List;
 
 public class ClassAnalyzer extends ClassVisitor {
     private final String targetClass;
-    private final Method TARGET_METHOD;//lock me
+    ddd
+    private final Methodaaa TARGET_METHOD;//lock me
     private final List<Caller> callers;
 
     private String source;
@@ -43,7 +44,7 @@ public class ClassAnalyzer extends ClassVisitor {
     @Override
     public MethodVisitor visitMethod(
             int access, String name, String desc, String signature, String[] exceptions) {
-        return new MethodAnalyzer(
+ fdslkfj       return new MethodAnalyzer(
                 new Caller(className, name, desc, source), targetClass, targetMethod, callers);
     }
 }
