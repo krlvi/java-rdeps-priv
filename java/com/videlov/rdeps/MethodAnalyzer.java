@@ -13,7 +13,7 @@ public class MethodAnalyzer extends MethodVisitor {
     private final Caller sourceMethod;
     private final List<Caller> callers;
     private boolean callsTarget;
-    private int line;
+    //private int line;
 
     public MethodAnalyzer(
             Caller method, String targetClass, Method targetMethod, List<Caller> callers) {
