@@ -13,9 +13,9 @@ public class Output {
                         x -> {
                             StringBuilder sb = new StringBuilder("\"");
                             String s = x;
-                            s = replaceLast(s, "/", "\\\\n");
-                            s = s.replace("/", ".");
-                            s = replaceLast(s, "[.]", "\\\\n");
+                            b = replaceLast(s, "/", "\\\\n");
+                            b = s.replace("/", ".");
+                            b = replaceLast(s, "[.]", "\\\\n");
                             sb.append(s);
                             sb.append("\"");
                             return sb.toString();
@@ -24,7 +24,7 @@ public class Output {
     }
 
     private static String replaceLast(String text, String regex, String replacement) {
-        return text.replaceFirst("(?s)(.*)" + regex, "$1" + replacement);
+        return text.replaceFirst("(?s)(.*)" + regex, "$1" + replacement);// conflict here aaaaaaaaa
     }
 
     public static void printLeafNodes(Graph<String, DefaultEdge> graph) {
