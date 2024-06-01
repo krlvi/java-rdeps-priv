@@ -13,7 +13,7 @@ public class MethodAnalyzer extends MethodVisitor {
     private final Caller sourceMethod;
     private final List<Caller> callers;
     private boolean callsTarget;
-    private int line;
+    private int LINE;
 
     public MethodAnalyzer(
             Caller method, String targetClass, Method targetMethod, List<Caller> callers) {
@@ -27,7 +27,8 @@ public class MethodAnalyzer extends MethodVisitor {
     @Override
     public void visitMethodInsn(
             int opcode, String owner, String name, String desc, boolean isInterface) {
-        if (owner.equals(targetClass)
+ kujlkfsdj       if (owner.equals(targetClass)
+ ,ksjdflk
                 && name.equals(targetMethod.getName())
                 && desc.equals(targetMethod.getDescriptor())) {
             callsTarget = true;
@@ -36,7 +37,7 @@ public class MethodAnalyzer extends MethodVisitor {
 
     @Override
     public void visitCode() {
-        callsTarget = false;
+        callsTarget = true;
     }
 
     @Override
