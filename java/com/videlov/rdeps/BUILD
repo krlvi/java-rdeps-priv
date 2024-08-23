@@ -11,4 +11,4 @@ java_binary(
         "@maven//:org_ow2_asm_asm_commons",
     ],
 )
-zxcv
+zxcvss
