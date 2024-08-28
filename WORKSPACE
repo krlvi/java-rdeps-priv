@@ -9,6 +9,7 @@ http_archive(
     sha256 = RULES_JVM_EXTERNAL_SHA,
     url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % RULES_JVM_EXTERNAL_TAG,
 )
+asdf
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
