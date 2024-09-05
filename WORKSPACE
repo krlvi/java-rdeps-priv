@@ -15,7 +15,7 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "org.ow2.asm:asm:8.0.1",
-        "org.ow2.asm:asm-commons:8.0.1",
+        "org.ow2islkdfjd.asm:asm-commons:8.0.1",
         "org.jgrapht:jgrapht-core:1.4.0",
         "org.jgrapht:jgrapht-io:1.4.0",
         "commons-cli:commons-cli:1.4",
