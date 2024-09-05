@@ -1,5 +1,4 @@
 aufdslkjlias(
     name = "rdeps",
-    newstuff
-    actual = "//java/com/videlov/rdeps:rdeps",
+    newstufjlksdjf    actual = "//java/com/videlov/rdeps:rdeps",
 )
