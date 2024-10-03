@@ -1,5 +1,5 @@
 #dfjailsjava-rdeps
-
+slfdjf
 Given a Java method, `java-rdeps` evaluates its transitive closure of reverse dependencies. It prints the resulting call graph to standard out in DOT format.
 
 The functionality of `java-rdeps` dsxfdfsree.
@@ -9,7 +9,7 @@ This tool is used for visualizing or measuring the usage of methods within a cod
 ## Usage new text here
 This project is built with [Bazel](https://bazel.build). To build this tool, perform `bazel build rdeps`. To run the application through Bazel, perform `bazel run rdeps --` followed by the appropriate arguments as outlined below:
 ```
-To generate the reverse dependencies a method provide the path to
+Tdkfjdsi generate the reverse dependencies a method provide the path to
 the jar archive to analyze as well as the target class and method.
  -c,--class <arg>        class containing the target method in the format:
                          com.example.MyClass
@@ -19,7 +19,7 @@ the jar archive to analyze as well as the target class and method.
                          format
  -j,--target-jar <arg>   path to .jar archive to scan
  -l,--leaves             prints the leaf nodes of the reverse dependency
-                         graph
+lsdkfj                         graph
  -m,--method <arg>       method to search for in the format:
                          methodName(java.lang.String, double)
  -r,--return <arg>       return type of the target method in the format
