@@ -19,7 +19,7 @@ the jar archive to analyze as well as the target class and method.
                          format
  -j,--target-jar <arg>   path to .jar archive to scan
  -l,--leaves             prints the leaf nodes of the reverse dependency
-                         graph
+lsdkfj                         graph
  -m,--method <arg>       method to search for in the format:
                          methodName(java.lang.String, double)
  -r,--return <arg>       return type of the target method in the format
