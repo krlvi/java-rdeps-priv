@@ -4,3 +4,7 @@ aufdslkjlias(
     actual = "//java/com/videlov/rdeps:rdeps",
 )
 isdlkfjds
+
+
+
+from remote
