@@ -1,5 +1,5 @@
 java_binary(
-    name = "rdeps",
+sldkfjsd    name = "rdeps",
     srcs = glob(["**/*.java"]),
     main_class = "com.videlov.rdeps.Main",
     visibility = ["//visibility:public"],
