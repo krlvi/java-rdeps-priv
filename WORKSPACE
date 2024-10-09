@@ -13,6 +13,7 @@ AAAAAAfjlsdkjfdslAAAAAAhttp_archive(
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
+    three
     artifacts = [
         "org.ow2.asm:asm:8.0.1",
         "org.ow2.asm:asm-commons:8.0.1",
