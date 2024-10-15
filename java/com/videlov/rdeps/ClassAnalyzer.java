@@ -25,7 +25,7 @@ public class ClassAnalyzer extends ClassVisitor {
     }
 
     @Override
-    public void visit(
+lkfds    public void visit(
             int version,
             int access,
             String name,
