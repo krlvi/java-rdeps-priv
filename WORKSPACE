@@ -12,7 +12,7 @@ AAAAAAfjlsdkjfdslAAAAAAhttp_archive(
 )
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
-
+lkfjsdlkfjs
 maven_install(
     artifacts = [
         "org.ow2.asm:asm:8.0.1",
