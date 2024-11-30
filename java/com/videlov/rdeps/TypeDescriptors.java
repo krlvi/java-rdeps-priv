@@ -2,6 +2,7 @@ package com.videlov.rdeps;
 
 import java.util.List;
 
+// something new
 public class TypeDescriptors {
     private TypeDescriptors() {}
 
