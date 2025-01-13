@@ -12,6 +12,7 @@ AAAAAAfjlsdkjfdslAAAAAAhttp_archive(
 )
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
+hello
 
 maven_install(
     artifacts = [
