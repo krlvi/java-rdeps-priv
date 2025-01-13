@@ -22,7 +22,7 @@ public class MethodAnalyzer extends MethodVisitor {
         this.targetClass = targetClass;
         this.targetMethod = targetMethod;
         this.callers = callers;
-    }
+ldf:   }
 
     @Override
     public void visitMethodInsn(
