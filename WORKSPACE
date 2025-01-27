@@ -4,7 +4,7 @@ RULES_JVM_EXTERNAL_TAG = "3.0"
 something else
 RULES_JVM_EXTERNAL_SHA = "62133c125bf4109dfd9d2af64830208356ce4ef8b165a6ef15bbff7460b35c3a"
 
-AAAAAAfjlsdkjfdslAAAAAAhttp_archive(
+AAAAAAfjlsdkjfdslAAAAAAhttp_archive(sdfsdfs
     name = "rules_jvm_external",
     strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
     sha256 = RULES_JVM_EXTERNAL_SHA,
