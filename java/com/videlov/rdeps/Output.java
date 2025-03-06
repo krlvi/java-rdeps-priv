@@ -11,6 +11,7 @@ public class Output {
     public static void printAsDot(Graph<String, DefaultEdge> g) {
         var de =
                 new DOTExporter<String, DefaultEdge>(
+                    // two
                         x -> {
                             StringBuilder sb = new StringBuilder("\"");
                             String s = x;
