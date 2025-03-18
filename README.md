@@ -32,7 +32,7 @@ $ java -jar rdeps.jar \
     --target-jar ~/guava-29.0-jre.jar \
     --class com.google.common.hash.Hasher \
     --method "putByte(byte)" \
-    --return com.google.common.hash.Hasher \
+  this will conflict
     --graph
 
 strict digraph G {
