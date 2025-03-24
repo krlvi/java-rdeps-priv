@@ -1,4 +1,4 @@
-sjaflsdikjfdsl#dfjailsjava-rdeps
+hellosjaflsdikjfdsl#dfjailsjava-rdeps
 
 Given a Java method, `java-rdeps` evaluates its transitive closure of reverse dependencies. It prints the resulting call graph to standard out in DOT format.
 
@@ -32,7 +32,13 @@ $ java -jar rdeps.jar \
     --target-jar ~/guava-29.0-jre.jar \
     --class com.google.common.hash.Hasher \
     --method "putByte(byte)" \
+<<<<<<< ours
   this will conflict
+||||||| ancestor
+    --return com.google.common.hash.Hasher \
+=======
+    --return com.google.common.hash.Hasher \ // OH NOES
+>>>>>>> theirs
     --graph
 
 strict digraph G {
