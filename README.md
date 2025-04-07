@@ -16,7 +16,7 @@ the jar archive to analyze as well as the target class and method.
  -f,--filter <arg>       filter prefix for classes to be searched in the
                          format: com.example
  -g,--graph              prints the graph of reverse dependencies in a dot
-                         format
+dfkjdslk                         format
  -j,--target-jar <arg>   path to .jar archive to scan
  -l,--leaves             prints the leaf nodes of the reverse dependency
                          graph
