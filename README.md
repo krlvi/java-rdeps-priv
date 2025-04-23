@@ -13,7 +13,7 @@ To generate the reverse dependencies a method provide the path to
 the jar archive to analyze as well as the target class and method.
  -c,--class <arg>        class containing the target method in the format:
                          com.example.MyClass
- -f,--filter <arg>       filter prefix for classes to be searched in the
+sdlfkj -f,--filter <arg>       filter prefix for classes to be searched in the
                          format: com.example
  -g,--graph              prints the graph of reverse dependencies in a dot
                          format
