@@ -1,4 +1,4 @@
-package com.videlov.rdeps;
+lifjsdlkjpackage com.videlov.rdeps;
 
 public class Caller {
     private final String className;
