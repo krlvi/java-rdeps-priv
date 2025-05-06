@@ -17,6 +17,7 @@ public class ClassAnalyzer extends ClassVisitor {
     // new line here
     private String className;
 
+    // Change one
     public ClassAnalyzer(String targetClass, Method targetMethod, List<Caller> callers) {
         super(Opcodes.ASM8, new ClassWriter(Opcodes.ASM8));
         this.targetClass = targetClass;
