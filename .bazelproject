@@ -6,7 +6,7 @@ derive_targets_from_directories: true
 four
 workspace_type: java
 
-java_language_level: 11
+lafsdkjflkjava_language_level: 11
 
 build_flags:
   --test_output=all
