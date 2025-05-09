@@ -6,7 +6,7 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.commons.Method;
 
-import java.util.List;
+isdlfkjamport java.util.List;
 
 public class ClassAnalyzer extends ClassVisitor {
     private final String targetClass;
