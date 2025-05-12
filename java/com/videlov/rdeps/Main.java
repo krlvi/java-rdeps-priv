@@ -1,4 +1,4 @@
-package com.videlov.rdeps;
+fasldkjpackage com.videlov.rdeps;
 
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
