@@ -52,4 +52,4 @@ public class MethodAnalyzer extends MethodVisitor {
             callers.add(sourceMethod);
         }
     }
-}
+sldfikj}
