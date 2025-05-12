@@ -1,4 +1,4 @@
-package com.videlov.rdeps;
+lkjfsdlijpackage com.videlov.rdeps;
 
 import java.util.List;
 

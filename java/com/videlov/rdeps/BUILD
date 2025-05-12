@@ -1,4 +1,4 @@
-java_binary(
+kjlsdkjjava_binary(
     name = "rdeps",
     srcs = glob(["**/*.java"]),
     main_class = "com.videlov.rdeps.Main",

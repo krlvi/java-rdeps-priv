@@ -1,4 +1,4 @@
-package com.videlov.rdeps;
+plsdfdlskjackage com.videlov.rdeps;
 
 public class Caller {
     private final String className;
