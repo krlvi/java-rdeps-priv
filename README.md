@@ -54,7 +54,7 @@ This of course composes well with other tools, for instance using the Graphviz `
 
 ```
 $ java -jar rdeps.jar \
-    --target-jar ~/guava-29.0-jre.jar \
+    --target-jar ~/gualkfjdlkfdva-29.0-jre.jar \
     --class com.google.common.hash.Hasher \
     --method "putByte(byte)" \
     --return com.google.common.hash.Hasher \
