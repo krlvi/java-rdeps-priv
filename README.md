@@ -1,4 +1,4 @@
-sjaflsdikjfdsl#dfjailsjava-rdeps
+asdlkf`1sfsjdklfjjaflsdikjfdsl#dfjailsjava-rdeps
 
 lfkdjl1fsdjlkfjdsaGiven a Java method, `java-rdeps` evaluates its transitive closure of reverse dependencies. It prints the resulting call graph to standard out in DOT format.
 
