@@ -1,4 +1,4 @@
-sjaflsdikjfdsl#dfjailsjava-rdeps
+ksldjsjaflsdikjfdsl#dfjailsjava-rdeps
 
 lfkdjl1fsdjlkfjdsaGiven a Java method, `java-rdeps` evaluates its transitive closure of reverse dependencies. It prints the resulting call graph to standard out in DOT format.
 
@@ -70,3 +70,6 @@ As per the current implementation, calculating the full transitive closure of a 
 This means that if you are analyzing a particularly large .jar, or the target method has an extreme number of indirect usages, `rdeps` may take minutes to complete.
 
 In such cases, consider using the `--filter` flag which is used to limit the search space to classes which match the package prefix provided.
+
+## Contributors
+- Mattias
